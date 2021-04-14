@@ -1,0 +1,12 @@
+component: website
+org: adamelliotfields
+app: website-example
+name: website
+stage: prod
+
+inputs:
+  domain: sls-website.adamelliotfields.com
+  src:
+    src: ./src
+    hook: npm run build
+    dist: ./build
