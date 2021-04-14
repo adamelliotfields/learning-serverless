@@ -1,0 +1,12 @@
+component: graphql
+org: adamelliotfields
+app: graphql-example
+name: api
+stage: prod
+
+inputs:
+  src: ./
+  description: Serverless Framework GraphQL Component example.
+  memory: 128
+  timeout: 6
+  domain: sls-graphql.adamelliotfields.com
