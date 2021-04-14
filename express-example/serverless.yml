@@ -1,0 +1,15 @@
+component: express
+org: adamelliotfields
+app: express-example
+name: api
+stage: prod
+
+inputs:
+  src: ./
+  memory: 128
+  timeout: 6
+  description: Serverless Framework Express Component example.
+  env:
+    NODE_ENV: production
+  roleName: ServerlessFrameworkLambdaRole
+  domain: sls-express.adamelliotfields.com
