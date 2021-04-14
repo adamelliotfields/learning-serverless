@@ -1,0 +1,10 @@
+component: aws-iam-role
+org: adamelliotfields
+app: lambda-example
+name: role
+stage: prod
+
+inputs:
+  name: ServerlessFrameworkLambdaRole
+  service: lambda.amazonaws.com
+  policy: arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
