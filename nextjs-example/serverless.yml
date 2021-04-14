@@ -1,0 +1,7 @@
+nextjs-example:
+  component: '@sls-next/serverless-component'
+  inputs:
+    # Subdomains must be entered as an array.
+    domain:
+      - sls-next
+      - adamelliotfields.com
