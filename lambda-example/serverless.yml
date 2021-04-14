@@ -1,0 +1,20 @@
+# https://www.serverless.com/framework/docs/providers/aws/guide/serverless.yml
+service: lambda-example
+frameworkVersion: '2'
+configValidationMode: 'error'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: prod
+  stackName: LambdaExampleStack
+  memorySize: 128
+  versionFunctions: false
+
+functions:
+  example:
+    handler: index.handler
+    events:
+      - http:
+          path: /
+          method: get
